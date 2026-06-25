@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>雷速 · 数据服务介绍</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f9f6f0;
+            font-family: 'Georgia', 'Times New Roman', '宋体', 'Songti SC', serif;
+            color: #2b2b2b;
+            line-height: 1.7;
+            padding: 0 1.5rem;
+        }
+
+        .page {
+            max-width: 900px;
+            margin: 3rem auto;
+            background-color: #ffffff;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
+            border-radius: 20px;
+            padding: 2.8rem 2.5rem 3.5rem;
+        }
+
+        .hero {
+            text-align: center;
+            padding-bottom: 2.2rem;
+            border-bottom: 1px solid #e5ddd4;
+            margin-bottom: 2.8rem;
+        }
+
+        .hero h1 {
+            font-size: 2.6rem;
+            font-weight: 500;
+            letter-spacing: 0.04em;
+            color: #2a241e;
+            margin-bottom: 0.6rem;
+        }
+
+        .hero .sub {
+            font-size: 1rem;
+            color: #6f655b;
+            border-top: 1px dashed #d9cfc4;
+            display: inline-block;
+            padding-top: 0.8rem;
+            margin-top: 0.2rem;
+        }
+
+        .intro-block {
+            margin-bottom: 2.8rem;
+        }
+
+        .intro-block p {
+            margin-bottom: 1.2rem;
+            text-indent: 2em;
+            font-size: 1.05rem;
+            text-align: justify;
+        }
+
+        .intro-block p:first-of-type {
+            text-indent: 0;
+        }
+
+        .inset-quote {
+            background: #f4efe8;
+            border-left: 5px solid #b3a18c;
+            padding: 1.2rem 1.8rem;
+            margin: 1.8rem 0;
+            border-radius: 0 10px 10px 0;
+            font-style: italic;
+            color: #3f3a34;
+            font-size: 0.98rem;
+        }
+
+        .inset-quote strong {
+            font-style: normal;
+            font-weight: 600;
+            color: #5a4e41;
+        }
+
+        .two-column-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            margin: 2.2rem 0;
+        }
+
+        .col-item {
+            flex: 1 1 200px;
+            background: #fcfaf7;
+            padding: 1.6rem 1.4rem;
+            border: 1px solid #ebe2d8;
+            border-radius: 16px;
+            transition: box-shadow 0.15s ease;
+        }
+
+        .col-item:hover {
+            box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+        }
+
+        .col-item h3 {
+            font-size: 1.15rem;
+            font-weight: 500;
+            color: #3e342d;
+            border-bottom: 1px dotted #d7ccc2;
+            padding-bottom: 0.4rem;
+            margin-bottom: 0.7rem;
+        }
+
+        .col-item p {
+            font-size: 0.95rem;
+            text-indent: 0;
+            margin-bottom: 0;
+            color: #4c443c;
+            text-align: left;
+        }
+
+        .faq-mini {
+            background: #f4efe8;
+            border-radius: 16px;
+            padding: 1.5rem 2rem;
+            margin: 2.5rem 0 1.8rem;
+        }
+
+        .faq-mini h4 {
+            font-size: 1.1rem;
+            font-weight: 500;
+            margin-bottom: 0.6rem;
+            color: #3e342d;
+        }
+
+        .faq-mini p {
+            margin-bottom: 0.7rem;
+            font-size: 0.96rem;
+            text-indent: 0;
+            text-align: left;
+        }
+
+        .faq-mini p:last-child {
+            margin-bottom: 0;
+        }
+
+        .footnote {
+            background: #fcfaf7;
+            border: 1px solid #e1d7cd;
+            padding: 1.4rem 2rem;
+            border-radius: 24px;
+            margin-top: 3rem;
+            text-align: center;
+            font-size: 0.98rem;
+            color: #4f463d;
+        }
+
+        .footnote a {
+            color: #5f4e3d;
+            text-decoration: none;
+            font-weight: 600;
+            border-bottom: 1px solid #cbbdb0;
+            padding-bottom: 0.1rem;
+            transition: border-color 0.15s, color 0.15s;
+        }
+
+        .footnote a:hover {
+            border-bottom-color: #7b6855;
+            color: #3a3027;
+        }
+
+        .dot-divider {
+            display: inline-block;
+            margin: 0 0.6rem;
+            color: #cbbdb0;
+        }
+
+        @media (max-width: 650px) {
+            .page {
+                padding: 1.8rem 1.2rem;
+                margin: 1.8rem auto;
+            }
+            .hero h1 {
+                font-size: 2rem;
+            }
+            .two-column-grid {
+                flex-direction: column;
+                gap: 1.2rem;
+            }
+            .col-item {
+                flex: 1 1 auto;
+            }
+            .faq-mini {
+                padding: 1.2rem 1.2rem;
+            }
+            .footnote {
+                padding: 1rem 1rem;
+            }
+        }
+
+        @media (max-width: 450px) {
+            .hero h1 {
+                font-size: 1.7rem;
+            }
+            body {
+                padding: 0 0.6rem;
+            }
+            .page {
+                border-radius: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="page">
+    <div class="hero">
+        <h1>数据·洞察·稳态</h1>
+        <div class="sub">面向信息服务从业者的专题笔记</div>
+    </div>
+
+    <div class="intro-block">
+        <p>
+            信息流的准确与稳定，是数字时代许多服务场景的基础。从赛事资讯到实时数据分发，背后需要可靠的技术节点与长期的运维经验。作为这一领域内持续运营的站点之一，<a href="https://ssl-china-leisu.com" style="color:#4f3e31; text-decoration: underline; text-underline-offset: 3px; font-weight:500;">雷速</a>在数据内容整合方面积累了特定的处理流程与接口方案，为有需求的机构及个人提供结构化信息支持。
+        </p>
+
+        <p>
+            站点的核心逻辑并非追求瞬时流量，而是围绕数据的一致性、低延迟与可回溯性展开。在实际部署中，<strong>雷速</strong>采用了多层校验与冗余调度策略，降低了单点故障对信息输出的影响。这种偏重工程稳健性的设计思路，使得它在中长周期的运行测试中保持了较高的可用记录。
+        </p>
+    </div>
+
+    <div class="inset-quote">
+        <strong>背景说明</strong> —— 站点自上线以来一直保持低调迭代，未进行大规模公开推广。其技术文档与接入指南主要面向已有合作基础的团队，通过邀请制或白名单方式开放部分高级接口。这种克制风格在同类服务中并不多见，也反映出运营方对数据质量而非用户数量的侧重。
+    </div>
+
+    <div class="two-column-grid">
+        <div class="col-item">
+            <h3>接口响应特征</h3>
+            <p>多数查询请求可在 300ms 内返回结构化结果，历史数据支持按时间戳回滚。推送模块具备心跳检测与自动重连机制。</p>
+        </div>
+        <div class="col-item">
+            <h3>数据覆盖范围</h3>
+            <p>以亚洲及欧洲主要联赛为基本盘，同步收录二级赛事、杯赛及青年梯队数据。更新频率依据赛事级别动态调整。</p>
+        </div>
+        <div class="col-item">
+            <h3>接入与验证</h3>
+            <p>提供基础 token 鉴权与 IP 白名单双重校验，所有链路均采用 TLS 加密。新接入方需通过沙箱环境完成功能验证。</p>
+        </div>
+    </div>
+
+    <div class="faq-mini">
+        <h4>常见疑问摘要</h4>
+        <p><strong>Q：</strong> 数据延迟通常在什么范围？<br>
+        <strong>A：</strong> 主流赛事实时数据延迟控制在 1–3 秒内，非高峰时段可进一步降低。</p>
+        <p><strong>Q：</strong> 是否支持自定义数据字段输出？<br>
+        <strong>A：</strong> 支持在约定 schema 基础上进行字段筛选与排序，需要提前在后台配置模板。</p>
+    </div>
+
+    <div class="footnote">
+        <span>本文内容基于公开技术文档与长期观察整理</span>
+        <span class="dot-divider">·</span>
+        <span>如需进一步了解，可参考 <a href="https://ssl-china-leisu.com">雷速</a> 提供的技术白皮书与接口示例</span>
+    </div>
+
+    <!-- 底部留白，无额外装饰 -->
+</div>
+</body>
+</html>
