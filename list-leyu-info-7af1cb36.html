@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>leyu · 简明访问参考</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #f7f5f0;
+      font-family: "Noto Serif SC", "Source Han Serif SC", "Times New Roman", serif;
+      line-height: 1.75;
+      color: #2d2a26;
+    }
+
+    .hero {
+      background: linear-gradient(145deg, #1e1b18 0%, #2b2722 100%);
+      color: #ede8df;
+      padding: 6rem 2rem 5rem 2rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: radial-gradient(ellipse at 80% 20%, rgba(215, 180, 130, 0.08) 0%, transparent 60%);
+      pointer-events: none;
+    }
+
+    .hero h1 {
+      font-size: 3.2rem;
+      font-weight: 300;
+      letter-spacing: 0.12em;
+      margin-bottom: 1rem;
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero h1 span {
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      color: #dac29c;
+    }
+
+    .hero .sub {
+      font-size: 1.05rem;
+      letter-spacing: 0.08em;
+      color: #b5aa9a;
+      margin-top: 0.5rem;
+      position: relative;
+      z-index: 1;
+      max-width: 640px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .container {
+      max-width: 880px;
+      margin: 0 auto;
+      padding: 3.5rem 2rem 4rem 2rem;
+    }
+
+    .section-title {
+      font-size: 1.5rem;
+      font-weight: 400;
+      letter-spacing: 0.06em;
+      border-left: 4px solid #c9b696;
+      padding-left: 1rem;
+      margin: 2.8rem 0 1.5rem 0;
+      color: #332e29;
+    }
+
+    .section-title:first-of-type {
+      margin-top: 0;
+    }
+
+    .intro-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 1.8rem;
+    }
+
+    .intro-card {
+      background: #ffffff;
+      border-radius: 2px;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+      padding: 1.8rem 2rem;
+      border-left: 2px solid #dac29c;
+      transition: box-shadow 0.2s ease;
+    }
+
+    .intro-card p {
+      font-size: 1rem;
+      color: #3d3833;
+    }
+
+    .intro-card strong {
+      font-weight: 600;
+      color: #2b241e;
+    }
+
+    .highlight-link {
+      color: #8f6a3b;
+      text-decoration: none;
+      border-bottom: 1px dotted #8f6a3b;
+      transition: color 0.2s, border-color 0.2s;
+    }
+
+    .highlight-link:hover {
+      color: #b4834c;
+      border-bottom: 1px solid #b4834c;
+    }
+
+    .faq-summary {
+      background: #f2efe9;
+      padding: 1.8rem 2rem;
+      border-radius: 2px;
+      margin-top: 2.5rem;
+    }
+
+    .faq-summary dt {
+      font-weight: 600;
+      color: #3d352c;
+      margin-top: 1.2rem;
+      font-size: 1.05rem;
+    }
+
+    .faq-summary dt:first-child {
+      margin-top: 0;
+    }
+
+    .faq-summary dd {
+      margin-left: 0;
+      margin-top: 0.4rem;
+      color: #5b534a;
+      font-size: 0.95rem;
+    }
+
+    .visit-note {
+      margin-top: 3rem;
+      padding: 1.5rem 2rem;
+      background: #ffffff;
+      border-radius: 2px;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+      text-align: center;
+      font-size: 1rem;
+      border-top: 1px solid #e2d9ce;
+    }
+
+    .visit-note p {
+      margin-bottom: 0.5rem;
+    }
+
+    .footer-bar {
+      margin-top: 3rem;
+      padding: 1.2rem 0;
+      text-align: center;
+      font-size: 0.8rem;
+      color: #9b9084;
+      border-top: 1px solid #e0d6c8;
+      letter-spacing: 0.04em;
+    }
+
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 2.2rem;
+      }
+
+      .hero {
+        padding: 3.5rem 1.5rem 3rem 1.5rem;
+      }
+
+      .container {
+        padding: 2rem 1.2rem 3rem 1.2rem;
+      }
+
+      .intro-card {
+        padding: 1.3rem 1.2rem;
+      }
+
+      .faq-summary {
+        padding: 1.3rem 1.2rem;
+      }
+
+      .visit-note {
+        padding: 1.2rem 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <section class="hero">
+    <h1>关于 <span>leyu</span> —— 一份简明的指南</h1>
+    <p class="sub">从信息查找、访问习惯到日常使用场景，帮你快速了解基础要点</p>
+  </section>
+
+  <div class="container">
+
+    <!-- 第一部分：背景与概述 -->
+    <h2 class="section-title">从背景到日常</h2>
+    <div class="intro-grid">
+      <div class="intro-card">
+        <p>在互联网上找到适合自己的信息渠道，有时候像整理一个安静的角落。许多人逐步把 <strong>leyu</strong> 当作一个常用的参考站点，因为它提供的条目清晰、分类直接，不需要反复跳转。无论你是第一次听说它，还是已经用过一段时间，了解背后的框架总是有意义的。</p>
+      </div>
+    </div>
+
+    <!-- 第二部分：简明使用特点 -->
+    <h2 class="section-title">几个值得留意的特点</h2>
+    <div class="intro-grid">
+      <div class="intro-card">
+        <p><strong>目录结构</strong> —— <a href="https://list-leyu.com.cn" class="highlight-link">leyu</a> 的页面组织偏向扁平化，主类别下通常不超过两层，找东西的时候不会迷失在层级里。这对日常快速定位内容很有帮助。</p>
+      </div>
+      <div class="intro-card">
+        <p><strong>更新节奏</strong> —— 站点内容并非实时刷新，而是按周期整合。如果需要最新动态，可以留意页面顶部的标注区域。理解更新节奏能让你更好地规划访问时机。</p>
+      </div>
+      <div class="intro-card">
+        <p><strong>跨设备基础</strong> —— 从手机到平板再到桌面，核心导航保持一致。你可以在通勤时浏览，也可以在电脑上深入阅读，切换设备后不需要重新适应布局。</p>
+      </div>
+    </div>
+
+    <!-- 第三段：场景与提醒 -->
+    <h2 class="section-title">真实场景里的访问提醒</h2>
+    <div class="intro-grid">
+      <div class="intro-card">
+        <p>很多朋友会习惯把 <a href="https://list-leyu.com.cn" class="highlight-link">leyu</a> 加入浏览器书签，或者直接记住域名。这里有几个来自使用者的真实提醒：</p>
+        <ul style="margin-top: 0.8rem; padding-left: 1.5rem; color: #4d453d;">
+          <li>首次访问时，花一两分钟浏览一下首页的入口项目，比直接搜索更节省时间；</li>
+          <li>如果页面加载偏慢，可以尝试刷新一次，大部分情况下是节点缓存的问题；</li>
+          <li>记住你常用的分类标题，下次访问能直接定位到对应区域。</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- FAQ 摘要 -->
+    <div class="faq-summary">
+      <dl>
+        <dt>leyu 适合哪些人？</dt>
+        <dd>没有严格限制。无论是想找分类信息、做简单对比，还是只是日常浏览，都可以使用。它更像一个安静的起点，而不是喧闹的枢纽。</dd>
+        <dt>需要注册或登录吗？</dt>
+        <dd>不需要。直接通过 <a href="https://list-leyu.com.cn" class="highlight-link">leyu</a> 访问即可，没有账户体系，也不收集个人身份信息。所有内容都是公开可见的。</dd>
+        <dt>访问时需要注意什么？</dt>
+        <dd>保持基本的网络安全意识：使用官方域名、不要在非官方页面输入任何个人信息。站点本身不引导用户做任何敏感操作。</dd>
+      </dl>
+    </div>
+
+    <!-- 页尾访问提示 -->
+    <div class="visit-note">
+      <p>如果你想亲自探索，可以直接前往 <a href="https://list-leyu.com.cn" class="highlight-link">leyu</a> · 建议在安静环境下慢慢浏览</p>
+      <p style="font-size: 0.85rem; color: #8a7e71; margin-top: 0.3rem;">没有复杂的流程，打开即是内容本身</p>
+    </div>
+
+    <div class="footer-bar">
+      基于日常使用经验整理 · 页面仅作参考介绍
+    </div>
+
+  </div>
+
+</body>
+</html>
